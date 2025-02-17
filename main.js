@@ -1,8 +1,7 @@
-import { Command, EnumType } from "https://deno.land/x/cliffy@v1.0.0-rc.3/command/mod.ts"
 import { zip, enumerate, count, permute, combinations, wrapAroundGet } from "https://deno.land/x/good@1.14.3.0/array.js"
 // import { FileSystem } from "https://deno.land/x/quickr@0.7.4/main/file_system.js"
 import { Console, red, lightRed, yellow, green, cyan, dim, bold, clearAnsiStylesFrom } from "https://deno.land/x/quickr@0.7.4/main/console.js"
-import $ from "https://deno.land/x/dax@0.39.2/mod.ts"
+import $ from "https://esm.sh/jsr/@david/dax@0.42.0/mod.ts"
 import { capitalize, indent, toCamelCase, digitsToEnglishArray, toPascalCase, toKebabCase, toSnakeCase, toScreamingKebabCase, toScreamingSnakeCase, toRepresentation, toString, regex, findAll, iterativelyFindAll, escapeRegexMatch, escapeRegexReplace, extractFirst, isValidIdentifier, removeCommonPrefix, didYouMean } from "https://deno.land/x/good@1.14.3.0/string.js"
 import { FileSystem } from "https://deno.land/x/quickr@0.7.4/main/file_system.js"
 import * as yaml from "https://deno.land/std@0.168.0/encoding/yaml.ts"
@@ -12,8 +11,13 @@ import { selectOne } from "./input_tools.js"
 const $$ = (...args)=>$(...args).noThrow()
 export const nixStoreHashPattern = /[0123456789abcdfghijklmnpqrsvwxyz]{32}/
 
-export const nixEval = (string, {hash="aa0e8072a57e879073cee969a780e586dbe57997"})=>{
+export const nixEval = (string, {hash="aa0e8072a57e879073cee969a780e586dbe57997"}={})=>{
     return $$`nix eval -I 'nixpkgs=https://github.com/NixOS/nixpkgs/archive/${hash}.tar.gz' --impure --expr ${string}`
+}
+
+export const nixUrlHash = async (url)=>{
+    // getting the hash without trying and failing to fetch is a lot harder than you might think
+    return (await nixEval(`builtins.fetchTarball { url="${url}"; sha256="sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="; }`).text("stderr")).split("got: ")[1].trim()
 }
 
 export const jsStringToNixString = (string)=>{
