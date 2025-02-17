@@ -12,6 +12,10 @@ import { selectOne } from "./input_tools.js"
 const $$ = (...args)=>$(...args).noThrow()
 export const nixStoreHashPattern = /[0123456789abcdfghijklmnpqrsvwxyz]{32}/
 
+export const nixEval = (string, {hash="aa0e8072a57e879073cee969a780e586dbe57997"})=>{
+    return $$`nix eval -I 'nixpkgs=https://github.com/NixOS/nixpkgs/archive/${hash}.tar.gz' --impure --expr ${string}`
+}
+
 export const jsStringToNixString = (string)=>{
     return `"${string.replace(/\$\{|[\\"]/g, '\\$&').replace(/\u0000/g, '\\0')}"`
 }
