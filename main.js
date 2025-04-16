@@ -34,8 +34,8 @@ export const listNixPackages =  async ()=>{
 
 let hasFlakesEnabledString
 export const checkIfFlakesEnabled = async ({cacheFolder, overrideWith=null})=>{
-    let newOne = await FileSystem.info(`${FileSystem.home}/.local/state/nix/profiles/profile/manifest.nix`)
-    let oldOne = await FileSystem.info(`${FileSystem.home}/.local/state/nix/profiles/profile/manifest.json`)
+    let oldOne = await FileSystem.info(`${FileSystem.home}/.local/state/nix/profiles/profile/manifest.nix`)
+    let newOne = await FileSystem.info(`${FileSystem.home}/.local/state/nix/profiles/profile/manifest.json`)
     if (newOne.exists || oldOne.exists) {
         return newOne.exists
     // 
