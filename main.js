@@ -6,7 +6,7 @@ import { capitalize, indent, toCamelCase, digitsToEnglishArray, toPascalCase, to
 import { FileSystem } from "https://deno.land/x/quickr@0.7.4/main/file_system.js"
 import * as yaml from "https://deno.land/std@0.168.0/encoding/yaml.ts"
 
-import { selectOne } from "./input_tools.js"
+import { selectOne, clearScreen } from "./input_tools.js"
 
 const $$ = (...args)=>$(...args).noThrow()
 export const nixStoreHashPattern = /[0123456789abcdfghijklmnpqrsvwxyz]{32}/
@@ -170,7 +170,7 @@ export const removeExistingPackage = async ({urlOrPath, storePath, packages})=>{
     try {
         const uninstallList = []
         for (const eachPackage of packages) {
-            const storePaths = packageEntry.storePaths.filter(each=>each.length > 0)
+            const storePaths = eachPackage.storePaths.filter(each=>each.length > 0)
             const storePathMatches = storePaths.some(eachStorePath=>`${storePath}`.startsWith(eachStorePath))
             if (storePath && storePathMatches) {
                 uninstallList.push(eachPackage)
@@ -223,7 +223,6 @@ export async function install({hasFlakesEnabled, humanPackageSummary, urlOrPath,
                 const simpleName = cyan(folders.slice(4,).join("/"))+cyan("/")+green(name+ext)
                 clearScreen()
                 const packages = await listNixPackages()
-                
                 if (force) {
                     const urlOrPath = (removeExisting.slice(("nix --extra-experimental-features nix-command profile remove ").length).match(/(.+?)#/)||"")[1]
                     if (removeExisting) {
