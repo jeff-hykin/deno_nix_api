@@ -1,12 +1,3 @@
-// 
-// 
-// What is this file doing?
-// 
-// 
-    // 1. trying to install nix
-    // 2. using nix to install the environment
-    // 3. launching the environment as soon as possible
-
 // NOTE: because of run() this only works with Deno 1.x
 import { OperatingSystem } from "https://deno.land/x/quickr@0.7.6/main/operating_system.js"
 import { FileSystem } from "https://deno.land/x/quickr@0.7.6/main/file_system.js"
