@@ -16,7 +16,7 @@ const $$ = (...args)=>$(...args).noThrow()
 // await $$`false`
 // await $$`false`.text("stderr")
 
-export const toNixValue = Symbol("toNixValue")
+import { toNixValueSym, jsValueToNix } from "./tools/misc.js"
 
 export const nix = {
     async ensureInstalled(options={defaultVersion: null}) {
@@ -648,81 +648,7 @@ export const nix = {
             paths.includes(nixDefaultBin) || paths.push(nixDefaultBin)
             Console.env.PATH = paths.join(":").trim()
     },
-    escapeJsValue(obj) {
-        // 
-        // custom
-        // 
-        if (obj[toNixValue] instanceof Function) {
-            return obj[toNixValue]()
-        }
-
-        const objectType = typeof obj
-        if (obj == null) {
-            return `null`
-        } else if (objectType == 'boolean') {
-            return `${obj}`
-        } else if (objectType == 'number') {
-            // Nan
-            if (obj !== obj) {
-                return `null`
-            // Infinitys
-            } else if (obj*2 === obj) {
-                return `"${obj}"`
-            // floats and decimals
-            } else {
-                return `${obj}`
-            }
-        } else if (objectType == 'string') {
-            return escapeNixString(obj)
-        } else if (obj instanceof Object) {
-            // 
-            // Array
-            // 
-            if (obj instanceof Array) {
-                if (obj.length == 0) {
-                    return `[]`
-                } else {
-                    return `[\n${
-                        obj.map(
-                            each=>indent({string:this.escapeJsValue(each)})
-                        ).join("\n")
-                    }\n]`
-                }
-            // 
-            // Plain Object
-            // 
-            } else {
-                const entries = Object.entries(obj)
-                if (entries.length == 0) {
-                    return `{}`
-                } else {
-                    let string = "{\n"
-                    for (const [key, value] of entries) {
-                        const valueAsString = this.escapeJsValue(value)
-                        const valueIsSingleLine = !valueAsString.match(/\n/)
-                        if (valueIsSingleLine) {
-                            string += indent({
-                                string: `${escapeNixString(key)} = ${this.escapeJsValue(value)};`
-                            }) + "\n"
-                        } else {
-                            string += indent({
-                                string: `${escapeNixString(key)} = (\n${
-                                    indent({
-                                        string: this.escapeJsValue(value)
-                                    })
-                                });`
-                            })+"\n"
-                        }
-                    }
-                    string += "}"
-                    return string
-                }
-            }
-        // } else { // TODO: add regex support (hard because of escaping)
-        } else {
-            throw Error(`Unable to convert this value to a Nix representation: ${obj}`)
-        }
-    },
+    escapeJsValue: jsValueToNix,
 }
 
 // 
@@ -730,10 +656,6 @@ export const nix = {
 // helpers
 // 
 // 
-
-const escapeNixString = (string)=>{
-    return `"${string.replace(/\$\{|[\\"]/g, '\\$&').replace(/\u0000/g, '\\0')}"`
-}
 
 async function curlString(url) {
     try {

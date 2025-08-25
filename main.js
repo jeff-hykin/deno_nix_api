@@ -6,6 +6,7 @@ import { capitalize, indent, toCamelCase, digitsToEnglishArray, toPascalCase, to
 import { FileSystem } from "https://deno.land/x/quickr@0.7.4/main/file_system.js"
 import * as yaml from "https://deno.land/std@0.168.0/encoding/yaml.ts"
 
+import { escapeStringForNix, jsValueToNix } from "./tools/basics.js"
 import { selectOne, clearScreen } from "./input_tools.js"
 
 const $$ = (...args)=>$(...args).noThrow()
@@ -20,9 +21,13 @@ export const nixUrlHash = async (url)=>{
     return (await nixEval(`builtins.fetchTarball { url="${url}"; sha256="sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="; }`).text("stderr")).split("got: ")[1].trim()
 }
 
-export const jsStringToNixString = (string)=>{
-    return `"${string.replace(/\$\{|[\\"]/g, '\\$&').replace(/\u0000/g, '\\0')}"`
+let _currentSystem
+export const currentSystem = async (url)=>{
+    // getting the hash without trying and failing to fetch is a lot harder than you might think
+    return _currentSystem = _currentSystem || (await $$`nix-instantiate --eval --expr 'builtins.currentSystem' --show-trace 2>/dev/null`.text()).slice(1,-1)
 }
+
+export const jsStringToNixString = escapeStringForNix
 export const listNixPackages =  async ()=>{
     const packageList = await $$`nix --extra-experimental-features nix-command profile list --json`.text()
     const elements = JSON.parse(packageList).elements

@@ -1,3 +1,6 @@
+// 
+// note: things in this file do not need nix installed to work
+// 
 export const toNixValueSym = Symbol("toNixValueSym")
 
 export const escapeStringForNix = (string)=>{
