@@ -52,7 +52,7 @@ export const treeToAstString = (tree) => {
  *                     indent = eachNode.indent
  *                 }
  *             }
- *             return `${indent.slice(0,bracket.indent.length)}${valueAsString}\n${bracket.indent}]`
+ *             return `${indent.slice(bracket.indent.length)}${valueAsString}\n${bracket.indent}]`
  *         }
  *     },
  * }))
@@ -78,7 +78,8 @@ export const findAndReplaceAll = ({ nixCode, pattern, nameToReplace, replacement
         newChunks.push(replacementString)
         nextIndex = end
     }
-    
+    // last chunk
+    newChunks.push(nixCode.slice(nextIndex))
     return newChunks.join("")
 }
 
@@ -88,14 +89,14 @@ export const appendToAttrListLiteral = ({nixCode, attrName, codeToAppend, })=>{
         pattern: `(binding (attrpath) @key (list_expression ("]" @bracket)) @list)`,
         nameToReplace: "bracket",
         replacement: ({bracket, list})=>{
-            const doesntNeedParens = codeToAppend.match(/^(?:true|false|null|\w+|\d+|\d+\.\d+|"[^"]*"|'[^']*')$/)
-            let valueAsString
-            if (doesntNeedParens) {
-                valueAsString = codeToAppend
-            } else {
-                valueAsString = `(${codeToAppend})`
-            }
-            const listIsInline = list.text.includes("\n")
+            // const doesntNeedParens = codeToAppend.match(/^(?:true|false|null|\w+|\d+|\d+\.\d+|"[^"]*"|'[^']*')$/)
+            let valueAsString = codeToAppend
+            // if (doesntNeedParens) {
+            //     valueAsString = codeToAppend
+            // } else {
+            //     valueAsString = `(${codeToAppend})`
+            // }
+            const listIsInline = !list.text.includes("\n")
             if (listIsInline) {
                 return ` ${valueAsString} ]`
             } else {
@@ -105,7 +106,9 @@ export const appendToAttrListLiteral = ({nixCode, attrName, codeToAppend, })=>{
                         indent = eachNode.indent
                     }
                 }
-                return `${indent.slice(0,bracket.indent.length)}${valueAsString}\n${bracket.indent}]`
+                console.debug(`bracket.indent is:`,JSON.stringify(bracket.indent))
+                console.debug(`indent is:`,JSON.stringify(indent))
+                return `${indent.slice(bracket.indent.length)}${valueAsString}\n${bracket.indent}]`
             }
         },
     })
