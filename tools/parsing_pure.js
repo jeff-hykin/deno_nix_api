@@ -89,16 +89,9 @@ export const appendToAttrListLiteral = ({nixCode, attrName, codeToAppend, })=>{
         pattern: `(binding (attrpath) @key (list_expression ("]" @bracket)) @list)`,
         nameToReplace: "bracket",
         replacement: ({bracket, list})=>{
-            // const doesntNeedParens = codeToAppend.match(/^(?:true|false|null|\w+|\d+|\d+\.\d+|"[^"]*"|'[^']*')$/)
-            let valueAsString = codeToAppend
-            // if (doesntNeedParens) {
-            //     valueAsString = codeToAppend
-            // } else {
-            //     valueAsString = `(${codeToAppend})`
-            // }
             const listIsInline = !list.text.includes("\n")
             if (listIsInline) {
-                return ` ${valueAsString} ]`
+                return ` ${codeToAppend} ]`
             } else {
                 let indent = (list.indent || "")
                 for (let eachNode of list.children) {
@@ -108,7 +101,7 @@ export const appendToAttrListLiteral = ({nixCode, attrName, codeToAppend, })=>{
                 }
                 console.debug(`bracket.indent is:`,JSON.stringify(bracket.indent))
                 console.debug(`indent is:`,JSON.stringify(indent))
-                return `${indent.slice(bracket.indent.length)}${valueAsString}\n${bracket.indent}]`
+                return `${indent.slice(bracket.indent.length)}${codeToAppend}\n${bracket.indent}]`
             }
         },
     })
