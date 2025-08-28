@@ -1,0 +1,3840 @@
+{
+  "type": "source_code",
+  "typeId": 62,
+  "startPosition": {
+    "row": 0,
+    "column": 0
+  },
+  "startIndex": 0,
+  "endPosition": {
+    "row": 31,
+    "column": 6
+  },
+  "endIndex": 841,
+  "children": [
+    {
+      "type": "comment",
+      "typeId": 55,
+      "startPosition": {
+        "row": 0,
+        "column": 0
+      },
+      "startIndex": 0,
+      "endPosition": {
+        "row": 0,
+        "column": 20
+      },
+      "endIndex": 20,
+      "text": "# blah start comment",
+      "children": []
+    },
+    {
+      "type": "comment",
+      "typeId": 55,
+      "startPosition": {
+        "row": 1,
+        "column": 0
+      },
+      "startIndex": 21,
+      "endPosition": {
+        "row": 1,
+        "column": 25
+      },
+      "endIndex": 46,
+      "text": "/* other kinda comment */",
+      "children": []
+    },
+    {
+      "type": "function_expression",
+      "typeId": 68,
+      "startPosition": {
+        "row": 2,
+        "column": 0
+      },
+      "startIndex": 47,
+      "endPosition": {
+        "row": 29,
+        "column": 5
+      },
+      "endIndex": 833,
+      "children": [
+        {
+          "type": "formals",
+          "typeId": 69,
+          "startPosition": {
+            "row": 2,
+            "column": 0
+          },
+          "startIndex": 47,
+          "endPosition": {
+            "row": 4,
+            "column": 1
+          },
+          "endIndex": 62,
+          "children": [
+            {
+              "type": "{",
+              "typeId": 10,
+              "startPosition": {
+                "row": 2,
+                "column": 0
+              },
+              "startIndex": 47,
+              "endPosition": {
+                "row": 2,
+                "column": 1
+              },
+              "endIndex": 48,
+              "text": "{",
+              "children": []
+            },
+            {
+              "type": "formal",
+              "typeId": 70,
+              "startPosition": {
+                "row": 3,
+                "column": 4
+              },
+              "startIndex": 53,
+              "endPosition": {
+                "row": 3,
+                "column": 10
+              },
+              "endIndex": 59,
+              "children": [
+                {
+                  "type": "identifier",
+                  "typeId": 2,
+                  "startPosition": {
+                    "row": 3,
+                    "column": 4
+                  },
+                  "startIndex": 53,
+                  "endPosition": {
+                    "row": 3,
+                    "column": 5
+                  },
+                  "endIndex": 54,
+                  "text": "a",
+                  "children": []
+                },
+                {
+                  "type": "?",
+                  "typeId": 13,
+                  "startPosition": {
+                    "row": 3,
+                    "column": 6
+                  },
+                  "startIndex": 55,
+                  "endPosition": {
+                    "row": 3,
+                    "column": 7
+                  },
+                  "endIndex": 56,
+                  "text": "?",
+                  "children": []
+                },
+                {
+                  "type": "integer_expression",
+                  "typeId": 3,
+                  "startPosition": {
+                    "row": 3,
+                    "column": 8
+                  },
+                  "startIndex": 57,
+                  "endPosition": {
+                    "row": 3,
+                    "column": 10
+                  },
+                  "endIndex": 59,
+                  "text": "10",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "ERROR",
+              "typeId": 65535,
+              "startPosition": {
+                "row": 3,
+                "column": 10
+              },
+              "startIndex": 59,
+              "endPosition": {
+                "row": 3,
+                "column": 11
+              },
+              "endIndex": 60,
+              "children": [
+                {
+                  "type": ",",
+                  "typeId": 12,
+                  "startPosition": {
+                    "row": 3,
+                    "column": 10
+                  },
+                  "startIndex": 59,
+                  "endPosition": {
+                    "row": 3,
+                    "column": 11
+                  },
+                  "endIndex": 60,
+                  "text": ",",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "type": "}",
+              "typeId": 11,
+              "startPosition": {
+                "row": 4,
+                "column": 0
+              },
+              "startIndex": 61,
+              "endPosition": {
+                "row": 4,
+                "column": 1
+              },
+              "endIndex": 62,
+              "text": "}",
+              "children": []
+            }
+          ]
+        },
+        {
+          "type": ":",
+          "typeId": 8,
+          "startPosition": {
+            "row": 4,
+            "column": 1
+          },
+          "startIndex": 62,
+          "endPosition": {
+            "row": 4,
+            "column": 2
+          },
+          "endIndex": 63,
+          "text": ":",
+          "children": []
+        },
+        {
+          "type": "let_expression",
+          "typeId": 73,
+          "startPosition": {
+            "row": 5,
+            "column": 0
+          },
+          "startIndex": 64,
+          "endPosition": {
+            "row": 29,
+            "column": 5
+          },
+          "endIndex": 833,
+          "children": [
+            {
+              "type": "let",
+              "typeId": 18,
+              "startPosition": {
+                "row": 5,
+                "column": 0
+              },
+              "startIndex": 64,
+              "endPosition": {
+                "row": 5,
+                "column": 3
+              },
+              "endIndex": 67,
+              "text": "let",
+              "children": []
+            },
+            {
+              "type": "binding_set",
+              "typeId": 91,
+              "startPosition": {
+                "row": 6,
+                "column": 4
+              },
+              "startIndex": 73,
+              "endPosition": {
+                "row": 10,
+                "column": 6
+              },
+              "endIndex": 181,
+              "children": [
+                {
+                  "type": "binding",
+                  "typeId": 92,
+                  "startPosition": {
+                    "row": 6,
+                    "column": 4
+                  },
+                  "startIndex": 73,
+                  "endPosition": {
+                    "row": 6,
+                    "column": 22
+                  },
+                  "endIndex": 91,
+                  "children": [
+                    {
+                      "type": "attrpath",
+                      "typeId": 95,
+                      "startPosition": {
+                        "row": 6,
+                        "column": 4
+                      },
+                      "startIndex": 73,
+                      "endPosition": {
+                        "row": 6,
+                        "column": 10
+                      },
+                      "endIndex": 79,
+                      "children": [
+                        {
+                          "type": "identifier",
+                          "typeId": 2,
+                          "startPosition": {
+                            "row": 6,
+                            "column": 4
+                          },
+                          "startIndex": 73,
+                          "endPosition": {
+                            "row": 6,
+                            "column": 10
+                          },
+                          "endIndex": 79,
+                          "text": "thingy",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "=",
+                      "typeId": 49,
+                      "startPosition": {
+                        "row": 6,
+                        "column": 11
+                      },
+                      "startIndex": 80,
+                      "endPosition": {
+                        "row": 6,
+                        "column": 12
+                      },
+                      "endIndex": 81,
+                      "text": "=",
+                      "children": []
+                    },
+                    {
+                      "type": "attrset_expression",
+                      "typeId": 86,
+                      "startPosition": {
+                        "row": 6,
+                        "column": 13
+                      },
+                      "startIndex": 82,
+                      "endPosition": {
+                        "row": 6,
+                        "column": 21
+                      },
+                      "endIndex": 90,
+                      "children": [
+                        {
+                          "type": "{",
+                          "typeId": 10,
+                          "startPosition": {
+                            "row": 6,
+                            "column": 13
+                          },
+                          "startIndex": 82,
+                          "endPosition": {
+                            "row": 6,
+                            "column": 14
+                          },
+                          "endIndex": 83,
+                          "text": "{",
+                          "children": []
+                        },
+                        {
+                          "type": "binding_set",
+                          "typeId": 91,
+                          "startPosition": {
+                            "row": 6,
+                            "column": 15
+                          },
+                          "startIndex": 84,
+                          "endPosition": {
+                            "row": 6,
+                            "column": 20
+                          },
+                          "endIndex": 89,
+                          "children": [
+                            {
+                              "type": "binding",
+                              "typeId": 92,
+                              "startPosition": {
+                                "row": 6,
+                                "column": 15
+                              },
+                              "startIndex": 84,
+                              "endPosition": {
+                                "row": 6,
+                                "column": 20
+                              },
+                              "endIndex": 89,
+                              "children": [
+                                {
+                                  "type": "attrpath",
+                                  "typeId": 95,
+                                  "startPosition": {
+                                    "row": 6,
+                                    "column": 15
+                                  },
+                                  "startIndex": 84,
+                                  "endPosition": {
+                                    "row": 6,
+                                    "column": 16
+                                  },
+                                  "endIndex": 85,
+                                  "children": [
+                                    {
+                                      "type": "identifier",
+                                      "typeId": 2,
+                                      "startPosition": {
+                                        "row": 6,
+                                        "column": 15
+                                      },
+                                      "startIndex": 84,
+                                      "endPosition": {
+                                        "row": 6,
+                                        "column": 16
+                                      },
+                                      "endIndex": 85,
+                                      "text": "x",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "=",
+                                  "typeId": 49,
+                                  "startPosition": {
+                                    "row": 6,
+                                    "column": 16
+                                  },
+                                  "startIndex": 85,
+                                  "endPosition": {
+                                    "row": 6,
+                                    "column": 17
+                                  },
+                                  "endIndex": 86,
+                                  "text": "=",
+                                  "children": []
+                                },
+                                {
+                                  "type": "integer_expression",
+                                  "typeId": 3,
+                                  "startPosition": {
+                                    "row": 6,
+                                    "column": 17
+                                  },
+                                  "startIndex": 86,
+                                  "endPosition": {
+                                    "row": 6,
+                                    "column": 19
+                                  },
+                                  "endIndex": 88,
+                                  "text": "50",
+                                  "children": []
+                                },
+                                {
+                                  "type": ";",
+                                  "typeId": 16,
+                                  "startPosition": {
+                                    "row": 6,
+                                    "column": 19
+                                  },
+                                  "startIndex": 88,
+                                  "endPosition": {
+                                    "row": 6,
+                                    "column": 20
+                                  },
+                                  "endIndex": 89,
+                                  "text": ";",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "}",
+                          "typeId": 11,
+                          "startPosition": {
+                            "row": 6,
+                            "column": 20
+                          },
+                          "startIndex": 89,
+                          "endPosition": {
+                            "row": 6,
+                            "column": 21
+                          },
+                          "endIndex": 90,
+                          "text": "}",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": ";",
+                      "typeId": 16,
+                      "startPosition": {
+                        "row": 6,
+                        "column": 21
+                      },
+                      "startIndex": 90,
+                      "endPosition": {
+                        "row": 6,
+                        "column": 22
+                      },
+                      "endIndex": 91,
+                      "text": ";",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "binding",
+                  "typeId": 92,
+                  "startPosition": {
+                    "row": 7,
+                    "column": 4
+                  },
+                  "startIndex": 96,
+                  "endPosition": {
+                    "row": 10,
+                    "column": 6
+                  },
+                  "endIndex": 181,
+                  "children": [
+                    {
+                      "type": "attrpath",
+                      "typeId": 95,
+                      "startPosition": {
+                        "row": 7,
+                        "column": 4
+                      },
+                      "startIndex": 96,
+                      "endPosition": {
+                        "row": 7,
+                        "column": 29
+                      },
+                      "endIndex": 121,
+                      "children": [
+                        {
+                          "type": "identifier",
+                          "typeId": 2,
+                          "startPosition": {
+                            "row": 7,
+                            "column": 4
+                          },
+                          "startIndex": 96,
+                          "endPosition": {
+                            "row": 7,
+                            "column": 29
+                          },
+                          "endIndex": 121,
+                          "text": "permittedInsecurePackages",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "=",
+                      "typeId": 49,
+                      "startPosition": {
+                        "row": 7,
+                        "column": 30
+                      },
+                      "startIndex": 122,
+                      "endPosition": {
+                        "row": 7,
+                        "column": 31
+                      },
+                      "endIndex": 123,
+                      "text": "=",
+                      "children": []
+                    },
+                    {
+                      "type": "list_expression",
+                      "typeId": 99,
+                      "startPosition": {
+                        "row": 7,
+                        "column": 32
+                      },
+                      "startIndex": 124,
+                      "endPosition": {
+                        "row": 10,
+                        "column": 5
+                      },
+                      "endIndex": 180,
+                      "children": [
+                        {
+                          "type": "[",
+                          "typeId": 53,
+                          "startPosition": {
+                            "row": 7,
+                            "column": 32
+                          },
+                          "startIndex": 124,
+                          "endPosition": {
+                            "row": 7,
+                            "column": 33
+                          },
+                          "endIndex": 125,
+                          "text": "[",
+                          "children": []
+                        },
+                        {
+                          "type": "string_expression",
+                          "typeId": 89,
+                          "startPosition": {
+                            "row": 8,
+                            "column": 8
+                          },
+                          "startIndex": 134,
+                          "endPosition": {
+                            "row": 8,
+                            "column": 23
+                          },
+                          "endIndex": 149,
+                          "children": [
+                            {
+                              "type": "\"",
+                              "typeId": 44,
+                              "startPosition": {
+                                "row": 8,
+                                "column": 8
+                              },
+                              "startIndex": 134,
+                              "endPosition": {
+                                "row": 8,
+                                "column": 9
+                              },
+                              "endIndex": 135,
+                              "text": "\"",
+                              "children": []
+                            },
+                            {
+                              "type": "string_fragment",
+                              "typeId": 56,
+                              "startPosition": {
+                                "row": 8,
+                                "column": 9
+                              },
+                              "startIndex": 135,
+                              "endPosition": {
+                                "row": 8,
+                                "column": 22
+                              },
+                              "endIndex": 148,
+                              "text": "linux-4.13.16",
+                              "children": []
+                            },
+                            {
+                              "type": "\"",
+                              "typeId": 44,
+                              "startPosition": {
+                                "row": 8,
+                                "column": 22
+                              },
+                              "startIndex": 148,
+                              "endPosition": {
+                                "row": 8,
+                                "column": 23
+                              },
+                              "endIndex": 149,
+                              "text": "\"",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "string_expression",
+                          "typeId": 89,
+                          "startPosition": {
+                            "row": 9,
+                            "column": 8
+                          },
+                          "startIndex": 158,
+                          "endPosition": {
+                            "row": 9,
+                            "column": 24
+                          },
+                          "endIndex": 174,
+                          "children": [
+                            {
+                              "type": "\"",
+                              "typeId": 44,
+                              "startPosition": {
+                                "row": 9,
+                                "column": 8
+                              },
+                              "startIndex": 158,
+                              "endPosition": {
+                                "row": 9,
+                                "column": 9
+                              },
+                              "endIndex": 159,
+                              "text": "\"",
+                              "children": []
+                            },
+                            {
+                              "type": "string_fragment",
+                              "typeId": 56,
+                              "startPosition": {
+                                "row": 9,
+                                "column": 9
+                              },
+                              "startIndex": 159,
+                              "endPosition": {
+                                "row": 9,
+                                "column": 23
+                              },
+                              "endIndex": 173,
+                              "text": "openssl-1.0.2u",
+                              "children": []
+                            },
+                            {
+                              "type": "\"",
+                              "typeId": 44,
+                              "startPosition": {
+                                "row": 9,
+                                "column": 23
+                              },
+                              "startIndex": 173,
+                              "endPosition": {
+                                "row": 9,
+                                "column": 24
+                              },
+                              "endIndex": 174,
+                              "text": "\"",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "]",
+                          "typeId": 54,
+                          "startPosition": {
+                            "row": 10,
+                            "column": 4
+                          },
+                          "startIndex": 179,
+                          "endPosition": {
+                            "row": 10,
+                            "column": 5
+                          },
+                          "endIndex": 180,
+                          "text": "]",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": ";",
+                      "typeId": 16,
+                      "startPosition": {
+                        "row": 10,
+                        "column": 5
+                      },
+                      "startIndex": 180,
+                      "endPosition": {
+                        "row": 10,
+                        "column": 6
+                      },
+                      "endIndex": 181,
+                      "text": ";",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "in",
+              "typeId": 19,
+              "startPosition": {
+                "row": 11,
+                "column": 0
+              },
+              "startIndex": 182,
+              "endPosition": {
+                "row": 11,
+                "column": 2
+              },
+              "endIndex": 184,
+              "text": "in",
+              "children": []
+            },
+            {
+              "type": "attrset_expression",
+              "typeId": 86,
+              "startPosition": {
+                "row": 12,
+                "column": 4
+              },
+              "startIndex": 189,
+              "endPosition": {
+                "row": 29,
+                "column": 5
+              },
+              "endIndex": 833,
+              "children": [
+                {
+                  "type": "{",
+                  "typeId": 10,
+                  "startPosition": {
+                    "row": 12,
+                    "column": 4
+                  },
+                  "startIndex": 189,
+                  "endPosition": {
+                    "row": 12,
+                    "column": 5
+                  },
+                  "endIndex": 190,
+                  "text": "{",
+                  "children": []
+                },
+                {
+                  "type": "binding_set",
+                  "typeId": 91,
+                  "startPosition": {
+                    "row": 13,
+                    "column": 8
+                  },
+                  "startIndex": 199,
+                  "endPosition": {
+                    "row": 28,
+                    "column": 40
+                  },
+                  "endIndex": 827,
+                  "children": [
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 13,
+                        "column": 8
+                      },
+                      "startIndex": 199,
+                      "endPosition": {
+                        "row": 13,
+                        "column": 41
+                      },
+                      "endIndex": 232,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 13,
+                            "column": 8
+                          },
+                          "startIndex": 199,
+                          "endPosition": {
+                            "row": 13,
+                            "column": 19
+                          },
+                          "endIndex": 210,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 13,
+                                "column": 8
+                              },
+                              "startIndex": 199,
+                              "endPosition": {
+                                "row": 13,
+                                "column": 19
+                              },
+                              "endIndex": 210,
+                              "text": "__id_static",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 13,
+                            "column": 19
+                          },
+                          "startIndex": 210,
+                          "endPosition": {
+                            "row": 13,
+                            "column": 20
+                          },
+                          "endIndex": 211,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "string_expression",
+                          "typeId": 89,
+                          "startPosition": {
+                            "row": 13,
+                            "column": 20
+                          },
+                          "startIndex": 211,
+                          "endPosition": {
+                            "row": 13,
+                            "column": 40
+                          },
+                          "endIndex": 231,
+                          "children": [
+                            {
+                              "type": "\"",
+                              "typeId": 44,
+                              "startPosition": {
+                                "row": 13,
+                                "column": 20
+                              },
+                              "startIndex": 211,
+                              "endPosition": {
+                                "row": 13,
+                                "column": 21
+                              },
+                              "endIndex": 212,
+                              "text": "\"",
+                              "children": []
+                            },
+                            {
+                              "type": "string_fragment",
+                              "typeId": 56,
+                              "startPosition": {
+                                "row": 13,
+                                "column": 21
+                              },
+                              "startIndex": 212,
+                              "endPosition": {
+                                "row": 13,
+                                "column": 39
+                              },
+                              "endIndex": 230,
+                              "text": "0.9965333620239523",
+                              "children": []
+                            },
+                            {
+                              "type": "\"",
+                              "typeId": 44,
+                              "startPosition": {
+                                "row": 13,
+                                "column": 39
+                              },
+                              "startIndex": 230,
+                              "endPosition": {
+                                "row": 13,
+                                "column": 40
+                              },
+                              "endIndex": 231,
+                              "text": "\"",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 13,
+                            "column": 40
+                          },
+                          "startIndex": 231,
+                          "endPosition": {
+                            "row": 13,
+                            "column": 41
+                          },
+                          "endIndex": 232,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 13,
+                        "column": 41
+                      },
+                      "startIndex": 232,
+                      "endPosition": {
+                        "row": 13,
+                        "column": 127
+                      },
+                      "endIndex": 318,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 13,
+                            "column": 41
+                          },
+                          "startIndex": 232,
+                          "endPosition": {
+                            "row": 13,
+                            "column": 53
+                          },
+                          "endIndex": 244,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 13,
+                                "column": 41
+                              },
+                              "startIndex": 232,
+                              "endPosition": {
+                                "row": 13,
+                                "column": 53
+                              },
+                              "endIndex": 244,
+                              "text": "__id_dynamic",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 13,
+                            "column": 53
+                          },
+                          "startIndex": 244,
+                          "endPosition": {
+                            "row": 13,
+                            "column": 54
+                          },
+                          "endIndex": 245,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "apply_expression",
+                          "typeId": 81,
+                          "startPosition": {
+                            "row": 13,
+                            "column": 54
+                          },
+                          "startIndex": 245,
+                          "endPosition": {
+                            "row": 13,
+                            "column": 126
+                          },
+                          "endIndex": 317,
+                          "children": [
+                            {
+                              "type": "apply_expression",
+                              "typeId": 81,
+                              "startPosition": {
+                                "row": 13,
+                                "column": 54
+                              },
+                              "startIndex": 245,
+                              "endPosition": {
+                                "row": 13,
+                                "column": 80
+                              },
+                              "endIndex": 271,
+                              "children": [
+                                {
+                                  "type": "select_expression",
+                                  "typeId": 83,
+                                  "startPosition": {
+                                    "row": 13,
+                                    "column": 54
+                                  },
+                                  "startIndex": 245,
+                                  "endPosition": {
+                                    "row": 13,
+                                    "column": 71
+                                  },
+                                  "endIndex": 262,
+                                  "children": [
+                                    {
+                                      "type": "variable_expression",
+                                      "typeId": 64,
+                                      "startPosition": {
+                                        "row": 13,
+                                        "column": 54
+                                      },
+                                      "startIndex": 245,
+                                      "endPosition": {
+                                        "row": 13,
+                                        "column": 62
+                                      },
+                                      "endIndex": 253,
+                                      "children": [
+                                        {
+                                          "type": "identifier",
+                                          "typeId": 2,
+                                          "startPosition": {
+                                            "row": 13,
+                                            "column": 54
+                                          },
+                                          "startIndex": 245,
+                                          "endPosition": {
+                                            "row": 13,
+                                            "column": 62
+                                          },
+                                          "endIndex": 253,
+                                          "text": "builtins",
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": ".",
+                                      "typeId": 39,
+                                      "startPosition": {
+                                        "row": 13,
+                                        "column": 62
+                                      },
+                                      "startIndex": 253,
+                                      "endPosition": {
+                                        "row": 13,
+                                        "column": 63
+                                      },
+                                      "endIndex": 254,
+                                      "text": ".",
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "attrpath",
+                                      "typeId": 95,
+                                      "startPosition": {
+                                        "row": 13,
+                                        "column": 63
+                                      },
+                                      "startIndex": 254,
+                                      "endPosition": {
+                                        "row": 13,
+                                        "column": 71
+                                      },
+                                      "endIndex": 262,
+                                      "children": [
+                                        {
+                                          "type": "identifier",
+                                          "typeId": 2,
+                                          "startPosition": {
+                                            "row": 13,
+                                            "column": 63
+                                          },
+                                          "startIndex": 254,
+                                          "endPosition": {
+                                            "row": 13,
+                                            "column": 71
+                                          },
+                                          "endIndex": 262,
+                                          "text": "hashFile",
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "string_expression",
+                                  "typeId": 89,
+                                  "startPosition": {
+                                    "row": 13,
+                                    "column": 72
+                                  },
+                                  "startIndex": 263,
+                                  "endPosition": {
+                                    "row": 13,
+                                    "column": 80
+                                  },
+                                  "endIndex": 271,
+                                  "children": [
+                                    {
+                                      "type": "\"",
+                                      "typeId": 44,
+                                      "startPosition": {
+                                        "row": 13,
+                                        "column": 72
+                                      },
+                                      "startIndex": 263,
+                                      "endPosition": {
+                                        "row": 13,
+                                        "column": 73
+                                      },
+                                      "endIndex": 264,
+                                      "text": "\"",
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "string_fragment",
+                                      "typeId": 56,
+                                      "startPosition": {
+                                        "row": 13,
+                                        "column": 73
+                                      },
+                                      "startIndex": 264,
+                                      "endPosition": {
+                                        "row": 13,
+                                        "column": 79
+                                      },
+                                      "endIndex": 270,
+                                      "text": "sha256",
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "\"",
+                                      "typeId": 44,
+                                      "startPosition": {
+                                        "row": 13,
+                                        "column": 79
+                                      },
+                                      "startIndex": 270,
+                                      "endPosition": {
+                                        "row": 13,
+                                        "column": 80
+                                      },
+                                      "endIndex": 271,
+                                      "text": "\"",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "path_expression",
+                              "typeId": 65,
+                              "startPosition": {
+                                "row": 13,
+                                "column": 81
+                              },
+                              "startIndex": 272,
+                              "endPosition": {
+                                "row": 13,
+                                "column": 126
+                              },
+                              "endIndex": 317,
+                              "children": [
+                                {
+                                  "type": "path_fragment",
+                                  "typeId": 59,
+                                  "startPosition": {
+                                    "row": 13,
+                                    "column": 81
+                                  },
+                                  "startIndex": 272,
+                                  "endPosition": {
+                                    "row": 13,
+                                    "column": 126
+                                  },
+                                  "endIndex": 317,
+                                  "text": "/Users/jeffhykin/repos/snowball/random.ignore",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 13,
+                            "column": 126
+                          },
+                          "startIndex": 317,
+                          "endPosition": {
+                            "row": 13,
+                            "column": 127
+                          },
+                          "endIndex": 318,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 14,
+                        "column": 8
+                      },
+                      "startIndex": 327,
+                      "endPosition": {
+                        "row": 14,
+                        "column": 37
+                      },
+                      "endIndex": 356,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 14,
+                            "column": 8
+                          },
+                          "startIndex": 327,
+                          "endPosition": {
+                            "row": 14,
+                            "column": 11
+                          },
+                          "endIndex": 330,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 14,
+                                "column": 8
+                              },
+                              "startIndex": 327,
+                              "endPosition": {
+                                "row": 14,
+                                "column": 9
+                              },
+                              "endIndex": 328,
+                              "text": "a",
+                              "children": []
+                            },
+                            {
+                              "type": ".",
+                              "typeId": 39,
+                              "startPosition": {
+                                "row": 14,
+                                "column": 9
+                              },
+                              "startIndex": 328,
+                              "endPosition": {
+                                "row": 14,
+                                "column": 10
+                              },
+                              "endIndex": 329,
+                              "text": ".",
+                              "children": []
+                            },
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 14,
+                                "column": 10
+                              },
+                              "startIndex": 329,
+                              "endPosition": {
+                                "row": 14,
+                                "column": 11
+                              },
+                              "endIndex": 330,
+                              "text": "b",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 14,
+                            "column": 12
+                          },
+                          "startIndex": 331,
+                          "endPosition": {
+                            "row": 14,
+                            "column": 13
+                          },
+                          "endIndex": 332,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "binary_expression",
+                          "typeId": 79,
+                          "startPosition": {
+                            "row": 14,
+                            "column": 14
+                          },
+                          "startIndex": 333,
+                          "endPosition": {
+                            "row": 14,
+                            "column": 36
+                          },
+                          "endIndex": 355,
+                          "children": [
+                            {
+                              "type": "parenthesized_expression",
+                              "typeId": 85,
+                              "startPosition": {
+                                "row": 14,
+                                "column": 14
+                              },
+                              "startIndex": 333,
+                              "endPosition": {
+                                "row": 14,
+                                "column": 31
+                              },
+                              "endIndex": 350,
+                              "children": [
+                                {
+                                  "type": "(",
+                                  "typeId": 41,
+                                  "startPosition": {
+                                    "row": 14,
+                                    "column": 14
+                                  },
+                                  "startIndex": 333,
+                                  "endPosition": {
+                                    "row": 14,
+                                    "column": 15
+                                  },
+                                  "endIndex": 334,
+                                  "text": "(",
+                                  "children": []
+                                },
+                                {
+                                  "type": "binary_expression",
+                                  "typeId": 79,
+                                  "startPosition": {
+                                    "row": 14,
+                                    "column": 15
+                                  },
+                                  "startIndex": 334,
+                                  "endPosition": {
+                                    "row": 14,
+                                    "column": 30
+                                  },
+                                  "endIndex": 349,
+                                  "children": [
+                                    {
+                                      "type": "integer_expression",
+                                      "typeId": 3,
+                                      "startPosition": {
+                                        "row": 14,
+                                        "column": 15
+                                      },
+                                      "startIndex": 334,
+                                      "endPosition": {
+                                        "row": 14,
+                                        "column": 18
+                                      },
+                                      "endIndex": 337,
+                                      "text": "200",
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "+",
+                                      "typeId": 33,
+                                      "startPosition": {
+                                        "row": 14,
+                                        "column": 19
+                                      },
+                                      "startIndex": 338,
+                                      "endPosition": {
+                                        "row": 14,
+                                        "column": 20
+                                      },
+                                      "endIndex": 339,
+                                      "text": "+",
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "binary_expression",
+                                      "typeId": 79,
+                                      "startPosition": {
+                                        "row": 14,
+                                        "column": 21
+                                      },
+                                      "startIndex": 340,
+                                      "endPosition": {
+                                        "row": 14,
+                                        "column": 30
+                                      },
+                                      "endIndex": 349,
+                                      "children": [
+                                        {
+                                          "type": "integer_expression",
+                                          "typeId": 3,
+                                          "startPosition": {
+                                            "row": 14,
+                                            "column": 21
+                                          },
+                                          "startIndex": 340,
+                                          "endPosition": {
+                                            "row": 14,
+                                            "column": 24
+                                          },
+                                          "endIndex": 343,
+                                          "text": "100",
+                                          "children": []
+                                        },
+                                        {
+                                          "type": "/",
+                                          "typeId": 35,
+                                          "startPosition": {
+                                            "row": 14,
+                                            "column": 25
+                                          },
+                                          "startIndex": 344,
+                                          "endPosition": {
+                                            "row": 14,
+                                            "column": 26
+                                          },
+                                          "endIndex": 345,
+                                          "text": "/",
+                                          "children": []
+                                        },
+                                        {
+                                          "type": "integer_expression",
+                                          "typeId": 3,
+                                          "startPosition": {
+                                            "row": 14,
+                                            "column": 27
+                                          },
+                                          "startIndex": 346,
+                                          "endPosition": {
+                                            "row": 14,
+                                            "column": 30
+                                          },
+                                          "endIndex": 349,
+                                          "text": "100",
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": ")",
+                                  "typeId": 42,
+                                  "startPosition": {
+                                    "row": 14,
+                                    "column": 30
+                                  },
+                                  "startIndex": 349,
+                                  "endPosition": {
+                                    "row": 14,
+                                    "column": 31
+                                  },
+                                  "endIndex": 350,
+                                  "text": ")",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "-",
+                              "typeId": 24,
+                              "startPosition": {
+                                "row": 14,
+                                "column": 32
+                              },
+                              "startIndex": 351,
+                              "endPosition": {
+                                "row": 14,
+                                "column": 33
+                              },
+                              "endIndex": 352,
+                              "text": "-",
+                              "children": []
+                            },
+                            {
+                              "type": "integer_expression",
+                              "typeId": 3,
+                              "startPosition": {
+                                "row": 14,
+                                "column": 34
+                              },
+                              "startIndex": 353,
+                              "endPosition": {
+                                "row": 14,
+                                "column": 36
+                              },
+                              "endIndex": 355,
+                              "text": "55",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 14,
+                            "column": 36
+                          },
+                          "startIndex": 355,
+                          "endPosition": {
+                            "row": 14,
+                            "column": 37
+                          },
+                          "endIndex": 356,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "inherit",
+                      "typeId": 93,
+                      "startPosition": {
+                        "row": 15,
+                        "column": 8
+                      },
+                      "startIndex": 365,
+                      "endPosition": {
+                        "row": 15,
+                        "column": 23
+                      },
+                      "endIndex": 380,
+                      "children": [
+                        {
+                          "type": "inherit",
+                          "typeId": 50,
+                          "startPosition": {
+                            "row": 15,
+                            "column": 8
+                          },
+                          "startIndex": 365,
+                          "endPosition": {
+                            "row": 15,
+                            "column": 15
+                          },
+                          "endIndex": 372,
+                          "text": "inherit",
+                          "children": []
+                        },
+                        {
+                          "type": "inherited_attrs",
+                          "typeId": 96,
+                          "startPosition": {
+                            "row": 15,
+                            "column": 16
+                          },
+                          "startIndex": 373,
+                          "endPosition": {
+                            "row": 15,
+                            "column": 22
+                          },
+                          "endIndex": 379,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 15,
+                                "column": 16
+                              },
+                              "startIndex": 373,
+                              "endPosition": {
+                                "row": 15,
+                                "column": 22
+                              },
+                              "endIndex": 379,
+                              "text": "thingy",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 15,
+                            "column": 22
+                          },
+                          "startIndex": 379,
+                          "endPosition": {
+                            "row": 15,
+                            "column": 23
+                          },
+                          "endIndex": 380,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "inherit_from",
+                      "typeId": 94,
+                      "startPosition": {
+                        "row": 16,
+                        "column": 8
+                      },
+                      "startIndex": 389,
+                      "endPosition": {
+                        "row": 16,
+                        "column": 27
+                      },
+                      "endIndex": 408,
+                      "children": [
+                        {
+                          "type": "inherit",
+                          "typeId": 50,
+                          "startPosition": {
+                            "row": 16,
+                            "column": 8
+                          },
+                          "startIndex": 389,
+                          "endPosition": {
+                            "row": 16,
+                            "column": 15
+                          },
+                          "endIndex": 396,
+                          "text": "inherit",
+                          "children": []
+                        },
+                        {
+                          "type": "(",
+                          "typeId": 41,
+                          "startPosition": {
+                            "row": 16,
+                            "column": 16
+                          },
+                          "startIndex": 397,
+                          "endPosition": {
+                            "row": 16,
+                            "column": 17
+                          },
+                          "endIndex": 398,
+                          "text": "(",
+                          "children": []
+                        },
+                        {
+                          "type": "variable_expression",
+                          "typeId": 64,
+                          "startPosition": {
+                            "row": 16,
+                            "column": 17
+                          },
+                          "startIndex": 398,
+                          "endPosition": {
+                            "row": 16,
+                            "column": 23
+                          },
+                          "endIndex": 404,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 16,
+                                "column": 17
+                              },
+                              "startIndex": 398,
+                              "endPosition": {
+                                "row": 16,
+                                "column": 23
+                              },
+                              "endIndex": 404,
+                              "text": "thingy",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": ")",
+                          "typeId": 42,
+                          "startPosition": {
+                            "row": 16,
+                            "column": 23
+                          },
+                          "startIndex": 404,
+                          "endPosition": {
+                            "row": 16,
+                            "column": 24
+                          },
+                          "endIndex": 405,
+                          "text": ")",
+                          "children": []
+                        },
+                        {
+                          "type": "inherited_attrs",
+                          "typeId": 96,
+                          "startPosition": {
+                            "row": 16,
+                            "column": 25
+                          },
+                          "startIndex": 406,
+                          "endPosition": {
+                            "row": 16,
+                            "column": 26
+                          },
+                          "endIndex": 407,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 16,
+                                "column": 25
+                              },
+                              "startIndex": 406,
+                              "endPosition": {
+                                "row": 16,
+                                "column": 26
+                              },
+                              "endIndex": 407,
+                              "text": "x",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 16,
+                            "column": 26
+                          },
+                          "startIndex": 407,
+                          "endPosition": {
+                            "row": 16,
+                            "column": 27
+                          },
+                          "endIndex": 408,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 17,
+                        "column": 8
+                      },
+                      "startIndex": 417,
+                      "endPosition": {
+                        "row": 19,
+                        "column": 9
+                      },
+                      "endIndex": 472,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 17,
+                            "column": 8
+                          },
+                          "startIndex": 417,
+                          "endPosition": {
+                            "row": 17,
+                            "column": 9
+                          },
+                          "endIndex": 418,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 17,
+                                "column": 8
+                              },
+                              "startIndex": 417,
+                              "endPosition": {
+                                "row": 17,
+                                "column": 9
+                              },
+                              "endIndex": 418,
+                              "text": "c",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 17,
+                            "column": 10
+                          },
+                          "startIndex": 419,
+                          "endPosition": {
+                            "row": 17,
+                            "column": 11
+                          },
+                          "endIndex": 420,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "function_expression",
+                          "typeId": 68,
+                          "startPosition": {
+                            "row": 17,
+                            "column": 12
+                          },
+                          "startIndex": 421,
+                          "endPosition": {
+                            "row": 18,
+                            "column": 30
+                          },
+                          "endIndex": 462,
+                          "children": [
+                            {
+                              "type": "formals",
+                              "typeId": 69,
+                              "startPosition": {
+                                "row": 17,
+                                "column": 12
+                              },
+                              "startIndex": 421,
+                              "endPosition": {
+                                "row": 17,
+                                "column": 14
+                              },
+                              "endIndex": 423,
+                              "children": [
+                                {
+                                  "type": "{",
+                                  "typeId": 10,
+                                  "startPosition": {
+                                    "row": 17,
+                                    "column": 12
+                                  },
+                                  "startIndex": 421,
+                                  "endPosition": {
+                                    "row": 17,
+                                    "column": 13
+                                  },
+                                  "endIndex": 422,
+                                  "text": "{",
+                                  "children": []
+                                },
+                                {
+                                  "type": "}",
+                                  "typeId": 11,
+                                  "startPosition": {
+                                    "row": 17,
+                                    "column": 13
+                                  },
+                                  "startIndex": 422,
+                                  "endPosition": {
+                                    "row": 17,
+                                    "column": 14
+                                  },
+                                  "endIndex": 423,
+                                  "text": "}",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "@",
+                              "typeId": 9,
+                              "startPosition": {
+                                "row": 17,
+                                "column": 14
+                              },
+                              "startIndex": 423,
+                              "endPosition": {
+                                "row": 17,
+                                "column": 15
+                              },
+                              "endIndex": 424,
+                              "text": "@",
+                              "children": []
+                            },
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 17,
+                                "column": 15
+                              },
+                              "startIndex": 424,
+                              "endPosition": {
+                                "row": 17,
+                                "column": 20
+                              },
+                              "endIndex": 429,
+                              "text": "thing",
+                              "children": []
+                            },
+                            {
+                              "type": ":",
+                              "typeId": 8,
+                              "startPosition": {
+                                "row": 17,
+                                "column": 20
+                              },
+                              "startIndex": 429,
+                              "endPosition": {
+                                "row": 17,
+                                "column": 21
+                              },
+                              "endIndex": 430,
+                              "text": ":",
+                              "children": []
+                            },
+                            {
+                              "type": "if_expression",
+                              "typeId": 75,
+                              "startPosition": {
+                                "row": 18,
+                                "column": 10
+                              },
+                              "startIndex": 442,
+                              "endPosition": {
+                                "row": 18,
+                                "column": 30
+                              },
+                              "endIndex": 462,
+                              "children": [
+                                {
+                                  "type": "if",
+                                  "typeId": 20,
+                                  "startPosition": {
+                                    "row": 18,
+                                    "column": 10
+                                  },
+                                  "startIndex": 442,
+                                  "endPosition": {
+                                    "row": 18,
+                                    "column": 12
+                                  },
+                                  "endIndex": 444,
+                                  "text": "if",
+                                  "children": []
+                                },
+                                {
+                                  "type": "select_expression",
+                                  "typeId": 83,
+                                  "startPosition": {
+                                    "row": 18,
+                                    "column": 13
+                                  },
+                                  "startIndex": 445,
+                                  "endPosition": {
+                                    "row": 18,
+                                    "column": 16
+                                  },
+                                  "endIndex": 448,
+                                  "children": [
+                                    {
+                                      "type": "variable_expression",
+                                      "typeId": 64,
+                                      "startPosition": {
+                                        "row": 18,
+                                        "column": 13
+                                      },
+                                      "startIndex": 445,
+                                      "endPosition": {
+                                        "row": 18,
+                                        "column": 14
+                                      },
+                                      "endIndex": 446,
+                                      "children": [
+                                        {
+                                          "type": "identifier",
+                                          "typeId": 2,
+                                          "startPosition": {
+                                            "row": 18,
+                                            "column": 13
+                                          },
+                                          "startIndex": 445,
+                                          "endPosition": {
+                                            "row": 18,
+                                            "column": 14
+                                          },
+                                          "endIndex": 446,
+                                          "text": "a",
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": ".",
+                                      "typeId": 39,
+                                      "startPosition": {
+                                        "row": 18,
+                                        "column": 14
+                                      },
+                                      "startIndex": 446,
+                                      "endPosition": {
+                                        "row": 18,
+                                        "column": 15
+                                      },
+                                      "endIndex": 447,
+                                      "text": ".",
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "attrpath",
+                                      "typeId": 95,
+                                      "startPosition": {
+                                        "row": 18,
+                                        "column": 15
+                                      },
+                                      "startIndex": 447,
+                                      "endPosition": {
+                                        "row": 18,
+                                        "column": 16
+                                      },
+                                      "endIndex": 448,
+                                      "children": [
+                                        {
+                                          "type": "identifier",
+                                          "typeId": 2,
+                                          "startPosition": {
+                                            "row": 18,
+                                            "column": 15
+                                          },
+                                          "startIndex": 447,
+                                          "endPosition": {
+                                            "row": 18,
+                                            "column": 16
+                                          },
+                                          "endIndex": 448,
+                                          "text": "a",
+                                          "children": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "then",
+                                  "typeId": 21,
+                                  "startPosition": {
+                                    "row": 18,
+                                    "column": 17
+                                  },
+                                  "startIndex": 449,
+                                  "endPosition": {
+                                    "row": 18,
+                                    "column": 21
+                                  },
+                                  "endIndex": 453,
+                                  "text": "then",
+                                  "children": []
+                                },
+                                {
+                                  "type": "variable_expression",
+                                  "typeId": 64,
+                                  "startPosition": {
+                                    "row": 18,
+                                    "column": 22
+                                  },
+                                  "startIndex": 454,
+                                  "endPosition": {
+                                    "row": 18,
+                                    "column": 23
+                                  },
+                                  "endIndex": 455,
+                                  "children": [
+                                    {
+                                      "type": "identifier",
+                                      "typeId": 2,
+                                      "startPosition": {
+                                        "row": 18,
+                                        "column": 22
+                                      },
+                                      "startIndex": 454,
+                                      "endPosition": {
+                                        "row": 18,
+                                        "column": 23
+                                      },
+                                      "endIndex": 455,
+                                      "text": "b",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "else",
+                                  "typeId": 22,
+                                  "startPosition": {
+                                    "row": 18,
+                                    "column": 24
+                                  },
+                                  "startIndex": 456,
+                                  "endPosition": {
+                                    "row": 18,
+                                    "column": 28
+                                  },
+                                  "endIndex": 460,
+                                  "text": "else",
+                                  "children": []
+                                },
+                                {
+                                  "type": "variable_expression",
+                                  "typeId": 64,
+                                  "startPosition": {
+                                    "row": 18,
+                                    "column": 29
+                                  },
+                                  "startIndex": 461,
+                                  "endPosition": {
+                                    "row": 18,
+                                    "column": 30
+                                  },
+                                  "endIndex": 462,
+                                  "children": [
+                                    {
+                                      "type": "identifier",
+                                      "typeId": 2,
+                                      "startPosition": {
+                                        "row": 18,
+                                        "column": 29
+                                      },
+                                      "startIndex": 461,
+                                      "endPosition": {
+                                        "row": 18,
+                                        "column": 30
+                                      },
+                                      "endIndex": 462,
+                                      "text": "c",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 19,
+                            "column": 8
+                          },
+                          "startIndex": 471,
+                          "endPosition": {
+                            "row": 19,
+                            "column": 9
+                          },
+                          "endIndex": 472,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 20,
+                        "column": 8
+                      },
+                      "startIndex": 481,
+                      "endPosition": {
+                        "row": 20,
+                        "column": 33
+                      },
+                      "endIndex": 506,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 20,
+                            "column": 8
+                          },
+                          "startIndex": 481,
+                          "endPosition": {
+                            "row": 20,
+                            "column": 26
+                          },
+                          "endIndex": 499,
+                          "children": [
+                            {
+                              "type": "string_expression",
+                              "typeId": 89,
+                              "startPosition": {
+                                "row": 20,
+                                "column": 8
+                              },
+                              "startIndex": 481,
+                              "endPosition": {
+                                "row": 20,
+                                "column": 26
+                              },
+                              "endIndex": 499,
+                              "children": [
+                                {
+                                  "type": "\"",
+                                  "typeId": 44,
+                                  "startPosition": {
+                                    "row": 20,
+                                    "column": 8
+                                  },
+                                  "startIndex": 481,
+                                  "endPosition": {
+                                    "row": 20,
+                                    "column": 9
+                                  },
+                                  "endIndex": 482,
+                                  "text": "\"",
+                                  "children": []
+                                },
+                                {
+                                  "type": "interpolation",
+                                  "typeId": 98,
+                                  "startPosition": {
+                                    "row": 20,
+                                    "column": 9
+                                  },
+                                  "startIndex": 482,
+                                  "endPosition": {
+                                    "row": 20,
+                                    "column": 25
+                                  },
+                                  "endIndex": 498,
+                                  "children": [
+                                    {
+                                      "type": "${",
+                                      "typeId": 51,
+                                      "startPosition": {
+                                        "row": 20,
+                                        "column": 9
+                                      },
+                                      "startIndex": 482,
+                                      "endPosition": {
+                                        "row": 20,
+                                        "column": 11
+                                      },
+                                      "endIndex": 484,
+                                      "text": "${",
+                                      "children": []
+                                    },
+                                    {
+                                      "type": "indented_string_expression",
+                                      "typeId": 90,
+                                      "startPosition": {
+                                        "row": 20,
+                                        "column": 11
+                                      },
+                                      "startIndex": 484,
+                                      "endPosition": {
+                                        "row": 20,
+                                        "column": 24
+                                      },
+                                      "endIndex": 497,
+                                      "children": [
+                                        {
+                                          "type": "''",
+                                          "typeId": 47,
+                                          "startPosition": {
+                                            "row": 20,
+                                            "column": 11
+                                          },
+                                          "startIndex": 484,
+                                          "endPosition": {
+                                            "row": 20,
+                                            "column": 13
+                                          },
+                                          "endIndex": 486,
+                                          "text": "''",
+                                          "children": []
+                                        },
+                                        {
+                                          "type": "string_fragment",
+                                          "typeId": 56,
+                                          "startPosition": {
+                                            "row": 20,
+                                            "column": 13
+                                          },
+                                          "startIndex": 486,
+                                          "endPosition": {
+                                            "row": 20,
+                                            "column": 22
+                                          },
+                                          "endIndex": 495,
+                                          "text": "something",
+                                          "children": []
+                                        },
+                                        {
+                                          "type": "''",
+                                          "typeId": 47,
+                                          "startPosition": {
+                                            "row": 20,
+                                            "column": 22
+                                          },
+                                          "startIndex": 495,
+                                          "endPosition": {
+                                            "row": 20,
+                                            "column": 24
+                                          },
+                                          "endIndex": 497,
+                                          "text": "''",
+                                          "children": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "}",
+                                      "typeId": 11,
+                                      "startPosition": {
+                                        "row": 20,
+                                        "column": 24
+                                      },
+                                      "startIndex": 497,
+                                      "endPosition": {
+                                        "row": 20,
+                                        "column": 25
+                                      },
+                                      "endIndex": 498,
+                                      "text": "}",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "\"",
+                                  "typeId": 44,
+                                  "startPosition": {
+                                    "row": 20,
+                                    "column": 25
+                                  },
+                                  "startIndex": 498,
+                                  "endPosition": {
+                                    "row": 20,
+                                    "column": 26
+                                  },
+                                  "endIndex": 499,
+                                  "text": "\"",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 20,
+                            "column": 27
+                          },
+                          "startIndex": 500,
+                          "endPosition": {
+                            "row": 20,
+                            "column": 28
+                          },
+                          "endIndex": 501,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "integer_expression",
+                          "typeId": 3,
+                          "startPosition": {
+                            "row": 20,
+                            "column": 29
+                          },
+                          "startIndex": 502,
+                          "endPosition": {
+                            "row": 20,
+                            "column": 32
+                          },
+                          "endIndex": 505,
+                          "text": "777",
+                          "children": []
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 20,
+                            "column": 32
+                          },
+                          "startIndex": 505,
+                          "endPosition": {
+                            "row": 20,
+                            "column": 33
+                          },
+                          "endIndex": 506,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 21,
+                        "column": 8
+                      },
+                      "startIndex": 515,
+                      "endPosition": {
+                        "row": 21,
+                        "column": 37
+                      },
+                      "endIndex": 544,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 21,
+                            "column": 8
+                          },
+                          "startIndex": 515,
+                          "endPosition": {
+                            "row": 21,
+                            "column": 15
+                          },
+                          "endIndex": 522,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 21,
+                                "column": 8
+                              },
+                              "startIndex": 515,
+                              "endPosition": {
+                                "row": 21,
+                                "column": 15
+                              },
+                              "endIndex": 522,
+                              "text": "thing88",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 21,
+                            "column": 16
+                          },
+                          "startIndex": 523,
+                          "endPosition": {
+                            "row": 21,
+                            "column": 17
+                          },
+                          "endIndex": 524,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "with_expression",
+                          "typeId": 72,
+                          "startPosition": {
+                            "row": 21,
+                            "column": 18
+                          },
+                          "startIndex": 525,
+                          "endPosition": {
+                            "row": 21,
+                            "column": 36
+                          },
+                          "endIndex": 543,
+                          "children": [
+                            {
+                              "type": "with",
+                              "typeId": 17,
+                              "startPosition": {
+                                "row": 21,
+                                "column": 18
+                              },
+                              "startIndex": 525,
+                              "endPosition": {
+                                "row": 21,
+                                "column": 22
+                              },
+                              "endIndex": 529,
+                              "text": "with",
+                              "children": []
+                            },
+                            {
+                              "type": "variable_expression",
+                              "typeId": 64,
+                              "startPosition": {
+                                "row": 21,
+                                "column": 23
+                              },
+                              "startIndex": 530,
+                              "endPosition": {
+                                "row": 21,
+                                "column": 29
+                              },
+                              "endIndex": 536,
+                              "children": [
+                                {
+                                  "type": "identifier",
+                                  "typeId": 2,
+                                  "startPosition": {
+                                    "row": 21,
+                                    "column": 23
+                                  },
+                                  "startIndex": 530,
+                                  "endPosition": {
+                                    "row": 21,
+                                    "column": 29
+                                  },
+                                  "endIndex": 536,
+                                  "text": "thingy",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": ";",
+                              "typeId": 16,
+                              "startPosition": {
+                                "row": 21,
+                                "column": 29
+                              },
+                              "startIndex": 536,
+                              "endPosition": {
+                                "row": 21,
+                                "column": 30
+                              },
+                              "endIndex": 537,
+                              "text": ";",
+                              "children": []
+                            },
+                            {
+                              "type": "list_expression",
+                              "typeId": 99,
+                              "startPosition": {
+                                "row": 21,
+                                "column": 31
+                              },
+                              "startIndex": 538,
+                              "endPosition": {
+                                "row": 21,
+                                "column": 36
+                              },
+                              "endIndex": 543,
+                              "children": [
+                                {
+                                  "type": "[",
+                                  "typeId": 53,
+                                  "startPosition": {
+                                    "row": 21,
+                                    "column": 31
+                                  },
+                                  "startIndex": 538,
+                                  "endPosition": {
+                                    "row": 21,
+                                    "column": 32
+                                  },
+                                  "endIndex": 539,
+                                  "text": "[",
+                                  "children": []
+                                },
+                                {
+                                  "type": "variable_expression",
+                                  "typeId": 64,
+                                  "startPosition": {
+                                    "row": 21,
+                                    "column": 33
+                                  },
+                                  "startIndex": 540,
+                                  "endPosition": {
+                                    "row": 21,
+                                    "column": 34
+                                  },
+                                  "endIndex": 541,
+                                  "children": [
+                                    {
+                                      "type": "identifier",
+                                      "typeId": 2,
+                                      "startPosition": {
+                                        "row": 21,
+                                        "column": 33
+                                      },
+                                      "startIndex": 540,
+                                      "endPosition": {
+                                        "row": 21,
+                                        "column": 34
+                                      },
+                                      "endIndex": 541,
+                                      "text": "x",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "]",
+                                  "typeId": 54,
+                                  "startPosition": {
+                                    "row": 21,
+                                    "column": 35
+                                  },
+                                  "startIndex": 542,
+                                  "endPosition": {
+                                    "row": 21,
+                                    "column": 36
+                                  },
+                                  "endIndex": 543,
+                                  "text": "]",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 21,
+                            "column": 36
+                          },
+                          "startIndex": 543,
+                          "endPosition": {
+                            "row": 21,
+                            "column": 37
+                          },
+                          "endIndex": 544,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 22,
+                        "column": 8
+                      },
+                      "startIndex": 553,
+                      "endPosition": {
+                        "row": 22,
+                        "column": 27
+                      },
+                      "endIndex": 572,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 22,
+                            "column": 8
+                          },
+                          "startIndex": 553,
+                          "endPosition": {
+                            "row": 22,
+                            "column": 19
+                          },
+                          "endIndex": 564,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 22,
+                                "column": 8
+                              },
+                              "startIndex": 553,
+                              "endPosition": {
+                                "row": 22,
+                                "column": 19
+                              },
+                              "endIndex": 564,
+                              "text": "allowUnfree",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 22,
+                            "column": 20
+                          },
+                          "startIndex": 565,
+                          "endPosition": {
+                            "row": 22,
+                            "column": 21
+                          },
+                          "endIndex": 566,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "variable_expression",
+                          "typeId": 64,
+                          "startPosition": {
+                            "row": 22,
+                            "column": 22
+                          },
+                          "startIndex": 567,
+                          "endPosition": {
+                            "row": 22,
+                            "column": 26
+                          },
+                          "endIndex": 571,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 22,
+                                "column": 22
+                              },
+                              "startIndex": 567,
+                              "endPosition": {
+                                "row": 22,
+                                "column": 26
+                              },
+                              "endIndex": 571,
+                              "text": "true",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 22,
+                            "column": 26
+                          },
+                          "startIndex": 571,
+                          "endPosition": {
+                            "row": 22,
+                            "column": 27
+                          },
+                          "endIndex": 572,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 23,
+                        "column": 8
+                      },
+                      "startIndex": 581,
+                      "endPosition": {
+                        "row": 23,
+                        "column": 22
+                      },
+                      "endIndex": 595,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 23,
+                            "column": 8
+                          },
+                          "startIndex": 581,
+                          "endPosition": {
+                            "row": 23,
+                            "column": 14
+                          },
+                          "endIndex": 587,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 23,
+                                "column": 8
+                              },
+                              "startIndex": 581,
+                              "endPosition": {
+                                "row": 23,
+                                "column": 14
+                              },
+                              "endIndex": 587,
+                              "text": "thing2",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 23,
+                            "column": 15
+                          },
+                          "startIndex": 588,
+                          "endPosition": {
+                            "row": 23,
+                            "column": 16
+                          },
+                          "endIndex": 589,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "float_expression",
+                          "typeId": 4,
+                          "startPosition": {
+                            "row": 23,
+                            "column": 17
+                          },
+                          "startIndex": 590,
+                          "endPosition": {
+                            "row": 23,
+                            "column": 21
+                          },
+                          "endIndex": 594,
+                          "text": "99.2",
+                          "children": []
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 23,
+                            "column": 21
+                          },
+                          "startIndex": 594,
+                          "endPosition": {
+                            "row": 23,
+                            "column": 22
+                          },
+                          "endIndex": 595,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 24,
+                        "column": 8
+                      },
+                      "startIndex": 604,
+                      "endPosition": {
+                        "row": 24,
+                        "column": 22
+                      },
+                      "endIndex": 618,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 24,
+                            "column": 8
+                          },
+                          "startIndex": 604,
+                          "endPosition": {
+                            "row": 24,
+                            "column": 14
+                          },
+                          "endIndex": 610,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 24,
+                                "column": 8
+                              },
+                              "startIndex": 604,
+                              "endPosition": {
+                                "row": 24,
+                                "column": 14
+                              },
+                              "endIndex": 610,
+                              "text": "thing3",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 24,
+                            "column": 15
+                          },
+                          "startIndex": 611,
+                          "endPosition": {
+                            "row": 24,
+                            "column": 16
+                          },
+                          "endIndex": 612,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "variable_expression",
+                          "typeId": 64,
+                          "startPosition": {
+                            "row": 24,
+                            "column": 17
+                          },
+                          "startIndex": 613,
+                          "endPosition": {
+                            "row": 24,
+                            "column": 21
+                          },
+                          "endIndex": 617,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 24,
+                                "column": 17
+                              },
+                              "startIndex": 613,
+                              "endPosition": {
+                                "row": 24,
+                                "column": 21
+                              },
+                              "endIndex": 617,
+                              "text": "null",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 24,
+                            "column": 21
+                          },
+                          "startIndex": 617,
+                          "endPosition": {
+                            "row": 24,
+                            "column": 22
+                          },
+                          "endIndex": 618,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 25,
+                        "column": 8
+                      },
+                      "startIndex": 627,
+                      "endPosition": {
+                        "row": 25,
+                        "column": 77
+                      },
+                      "endIndex": 696,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 25,
+                            "column": 8
+                          },
+                          "startIndex": 627,
+                          "endPosition": {
+                            "row": 25,
+                            "column": 48
+                          },
+                          "endIndex": 667,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 25,
+                                "column": 8
+                              },
+                              "startIndex": 627,
+                              "endPosition": {
+                                "row": 25,
+                                "column": 15
+                              },
+                              "endIndex": 634,
+                              "text": "nixpkgs",
+                              "children": []
+                            },
+                            {
+                              "type": ".",
+                              "typeId": 39,
+                              "startPosition": {
+                                "row": 25,
+                                "column": 15
+                              },
+                              "startIndex": 634,
+                              "endPosition": {
+                                "row": 25,
+                                "column": 16
+                              },
+                              "endIndex": 635,
+                              "text": ".",
+                              "children": []
+                            },
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 25,
+                                "column": 16
+                              },
+                              "startIndex": 635,
+                              "endPosition": {
+                                "row": 25,
+                                "column": 22
+                              },
+                              "endIndex": 641,
+                              "text": "config",
+                              "children": []
+                            },
+                            {
+                              "type": ".",
+                              "typeId": 39,
+                              "startPosition": {
+                                "row": 25,
+                                "column": 22
+                              },
+                              "startIndex": 641,
+                              "endPosition": {
+                                "row": 25,
+                                "column": 23
+                              },
+                              "endIndex": 642,
+                              "text": ".",
+                              "children": []
+                            },
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 25,
+                                "column": 23
+                              },
+                              "startIndex": 642,
+                              "endPosition": {
+                                "row": 25,
+                                "column": 48
+                              },
+                              "endIndex": 667,
+                              "text": "permittedInsecurePackages",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 25,
+                            "column": 49
+                          },
+                          "startIndex": 668,
+                          "endPosition": {
+                            "row": 25,
+                            "column": 50
+                          },
+                          "endIndex": 669,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "variable_expression",
+                          "typeId": 64,
+                          "startPosition": {
+                            "row": 25,
+                            "column": 51
+                          },
+                          "startIndex": 670,
+                          "endPosition": {
+                            "row": 25,
+                            "column": 76
+                          },
+                          "endIndex": 695,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 25,
+                                "column": 51
+                              },
+                              "startIndex": 670,
+                              "endPosition": {
+                                "row": 25,
+                                "column": 76
+                              },
+                              "endIndex": 695,
+                              "text": "permittedInsecurePackages",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 25,
+                            "column": 76
+                          },
+                          "startIndex": 695,
+                          "endPosition": {
+                            "row": 25,
+                            "column": 77
+                          },
+                          "endIndex": 696,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 26,
+                        "column": 8
+                      },
+                      "startIndex": 705,
+                      "endPosition": {
+                        "row": 26,
+                        "column": 62
+                      },
+                      "endIndex": 759,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 26,
+                            "column": 8
+                          },
+                          "startIndex": 705,
+                          "endPosition": {
+                            "row": 26,
+                            "column": 33
+                          },
+                          "endIndex": 730,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 26,
+                                "column": 8
+                              },
+                              "startIndex": 705,
+                              "endPosition": {
+                                "row": 26,
+                                "column": 33
+                              },
+                              "endIndex": 730,
+                              "text": "permittedInsecurePackages",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 26,
+                            "column": 34
+                          },
+                          "startIndex": 731,
+                          "endPosition": {
+                            "row": 26,
+                            "column": 35
+                          },
+                          "endIndex": 732,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "variable_expression",
+                          "typeId": 64,
+                          "startPosition": {
+                            "row": 26,
+                            "column": 36
+                          },
+                          "startIndex": 733,
+                          "endPosition": {
+                            "row": 26,
+                            "column": 61
+                          },
+                          "endIndex": 758,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 26,
+                                "column": 36
+                              },
+                              "startIndex": 733,
+                              "endPosition": {
+                                "row": 26,
+                                "column": 61
+                              },
+                              "endIndex": 758,
+                              "text": "permittedInsecurePackages",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 26,
+                            "column": 61
+                          },
+                          "startIndex": 758,
+                          "endPosition": {
+                            "row": 26,
+                            "column": 62
+                          },
+                          "endIndex": 759,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 27,
+                        "column": 8
+                      },
+                      "startIndex": 768,
+                      "endPosition": {
+                        "row": 27,
+                        "column": 26
+                      },
+                      "endIndex": 786,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 27,
+                            "column": 8
+                          },
+                          "startIndex": 768,
+                          "endPosition": {
+                            "row": 27,
+                            "column": 16
+                          },
+                          "endIndex": 776,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 27,
+                                "column": 8
+                              },
+                              "startIndex": 768,
+                              "endPosition": {
+                                "row": 27,
+                                "column": 16
+                              },
+                              "endIndex": 776,
+                              "text": "function",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 27,
+                            "column": 17
+                          },
+                          "startIndex": 777,
+                          "endPosition": {
+                            "row": 27,
+                            "column": 18
+                          },
+                          "endIndex": 778,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "function_expression",
+                          "typeId": 68,
+                          "startPosition": {
+                            "row": 27,
+                            "column": 19
+                          },
+                          "startIndex": 779,
+                          "endPosition": {
+                            "row": 27,
+                            "column": 25
+                          },
+                          "endIndex": 785,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 27,
+                                "column": 19
+                              },
+                              "startIndex": 779,
+                              "endPosition": {
+                                "row": 27,
+                                "column": 20
+                              },
+                              "endIndex": 780,
+                              "text": "a",
+                              "children": []
+                            },
+                            {
+                              "type": ":",
+                              "typeId": 8,
+                              "startPosition": {
+                                "row": 27,
+                                "column": 21
+                              },
+                              "startIndex": 781,
+                              "endPosition": {
+                                "row": 27,
+                                "column": 22
+                              },
+                              "endIndex": 782,
+                              "text": ":",
+                              "children": []
+                            },
+                            {
+                              "type": "integer_expression",
+                              "typeId": 3,
+                              "startPosition": {
+                                "row": 27,
+                                "column": 23
+                              },
+                              "startIndex": 783,
+                              "endPosition": {
+                                "row": 27,
+                                "column": 25
+                              },
+                              "endIndex": 785,
+                              "text": "10",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 27,
+                            "column": 25
+                          },
+                          "startIndex": 785,
+                          "endPosition": {
+                            "row": 27,
+                            "column": 26
+                          },
+                          "endIndex": 786,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "type": "binding",
+                      "typeId": 92,
+                      "startPosition": {
+                        "row": 28,
+                        "column": 8
+                      },
+                      "startIndex": 795,
+                      "endPosition": {
+                        "row": 28,
+                        "column": 40
+                      },
+                      "endIndex": 827,
+                      "children": [
+                        {
+                          "type": "attrpath",
+                          "typeId": 95,
+                          "startPosition": {
+                            "row": 28,
+                            "column": 8
+                          },
+                          "startIndex": 795,
+                          "endPosition": {
+                            "row": 28,
+                            "column": 17
+                          },
+                          "endIndex": 804,
+                          "children": [
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 28,
+                                "column": 8
+                              },
+                              "startIndex": 795,
+                              "endPosition": {
+                                "row": 28,
+                                "column": 17
+                              },
+                              "endIndex": 804,
+                              "text": "function2",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": "=",
+                          "typeId": 49,
+                          "startPosition": {
+                            "row": 28,
+                            "column": 18
+                          },
+                          "startIndex": 805,
+                          "endPosition": {
+                            "row": 28,
+                            "column": 19
+                          },
+                          "endIndex": 806,
+                          "text": "=",
+                          "children": []
+                        },
+                        {
+                          "type": "function_expression",
+                          "typeId": 68,
+                          "startPosition": {
+                            "row": 28,
+                            "column": 20
+                          },
+                          "startIndex": 807,
+                          "endPosition": {
+                            "row": 28,
+                            "column": 39
+                          },
+                          "endIndex": 826,
+                          "children": [
+                            {
+                              "type": "formals",
+                              "typeId": 69,
+                              "startPosition": {
+                                "row": 28,
+                                "column": 20
+                              },
+                              "startIndex": 807,
+                              "endPosition": {
+                                "row": 28,
+                                "column": 29
+                              },
+                              "endIndex": 816,
+                              "children": [
+                                {
+                                  "type": "{",
+                                  "typeId": 10,
+                                  "startPosition": {
+                                    "row": 28,
+                                    "column": 20
+                                  },
+                                  "startIndex": 807,
+                                  "endPosition": {
+                                    "row": 28,
+                                    "column": 21
+                                  },
+                                  "endIndex": 808,
+                                  "text": "{",
+                                  "children": []
+                                },
+                                {
+                                  "type": "formal",
+                                  "typeId": 70,
+                                  "startPosition": {
+                                    "row": 28,
+                                    "column": 21
+                                  },
+                                  "startIndex": 808,
+                                  "endPosition": {
+                                    "row": 28,
+                                    "column": 22
+                                  },
+                                  "endIndex": 809,
+                                  "children": [
+                                    {
+                                      "type": "identifier",
+                                      "typeId": 2,
+                                      "startPosition": {
+                                        "row": 28,
+                                        "column": 21
+                                      },
+                                      "startIndex": 808,
+                                      "endPosition": {
+                                        "row": 28,
+                                        "column": 22
+                                      },
+                                      "endIndex": 809,
+                                      "text": "a",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": ",",
+                                  "typeId": 12,
+                                  "startPosition": {
+                                    "row": 28,
+                                    "column": 22
+                                  },
+                                  "startIndex": 809,
+                                  "endPosition": {
+                                    "row": 28,
+                                    "column": 23
+                                  },
+                                  "endIndex": 810,
+                                  "text": ",",
+                                  "children": []
+                                },
+                                {
+                                  "type": "formal",
+                                  "typeId": 70,
+                                  "startPosition": {
+                                    "row": 28,
+                                    "column": 24
+                                  },
+                                  "startIndex": 811,
+                                  "endPosition": {
+                                    "row": 28,
+                                    "column": 25
+                                  },
+                                  "endIndex": 812,
+                                  "children": [
+                                    {
+                                      "type": "identifier",
+                                      "typeId": 2,
+                                      "startPosition": {
+                                        "row": 28,
+                                        "column": 24
+                                      },
+                                      "startIndex": 811,
+                                      "endPosition": {
+                                        "row": 28,
+                                        "column": 25
+                                      },
+                                      "endIndex": 812,
+                                      "text": "b",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": ",",
+                                  "typeId": 12,
+                                  "startPosition": {
+                                    "row": 28,
+                                    "column": 25
+                                  },
+                                  "startIndex": 812,
+                                  "endPosition": {
+                                    "row": 28,
+                                    "column": 26
+                                  },
+                                  "endIndex": 813,
+                                  "text": ",",
+                                  "children": []
+                                },
+                                {
+                                  "type": "formal",
+                                  "typeId": 70,
+                                  "startPosition": {
+                                    "row": 28,
+                                    "column": 27
+                                  },
+                                  "startIndex": 814,
+                                  "endPosition": {
+                                    "row": 28,
+                                    "column": 28
+                                  },
+                                  "endIndex": 815,
+                                  "children": [
+                                    {
+                                      "type": "identifier",
+                                      "typeId": 2,
+                                      "startPosition": {
+                                        "row": 28,
+                                        "column": 27
+                                      },
+                                      "startIndex": 814,
+                                      "endPosition": {
+                                        "row": 28,
+                                        "column": 28
+                                      },
+                                      "endIndex": 815,
+                                      "text": "c",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "}",
+                                  "typeId": 11,
+                                  "startPosition": {
+                                    "row": 28,
+                                    "column": 28
+                                  },
+                                  "startIndex": 815,
+                                  "endPosition": {
+                                    "row": 28,
+                                    "column": 29
+                                  },
+                                  "endIndex": 816,
+                                  "text": "}",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "type": "@",
+                              "typeId": 9,
+                              "startPosition": {
+                                "row": 28,
+                                "column": 29
+                              },
+                              "startIndex": 816,
+                              "endPosition": {
+                                "row": 28,
+                                "column": 30
+                              },
+                              "endIndex": 817,
+                              "text": "@",
+                              "children": []
+                            },
+                            {
+                              "type": "identifier",
+                              "typeId": 2,
+                              "startPosition": {
+                                "row": 28,
+                                "column": 30
+                              },
+                              "startIndex": 817,
+                              "endPosition": {
+                                "row": 28,
+                                "column": 35
+                              },
+                              "endIndex": 822,
+                              "text": "thing",
+                              "children": []
+                            },
+                            {
+                              "type": ":",
+                              "typeId": 8,
+                              "startPosition": {
+                                "row": 28,
+                                "column": 35
+                              },
+                              "startIndex": 822,
+                              "endPosition": {
+                                "row": 28,
+                                "column": 36
+                              },
+                              "endIndex": 823,
+                              "text": ":",
+                              "children": []
+                            },
+                            {
+                              "type": "integer_expression",
+                              "typeId": 3,
+                              "startPosition": {
+                                "row": 28,
+                                "column": 37
+                              },
+                              "startIndex": 824,
+                              "endPosition": {
+                                "row": 28,
+                                "column": 39
+                              },
+                              "endIndex": 826,
+                              "text": "10",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "type": ";",
+                          "typeId": 16,
+                          "startPosition": {
+                            "row": 28,
+                            "column": 39
+                          },
+                          "startIndex": 826,
+                          "endPosition": {
+                            "row": 28,
+                            "column": 40
+                          },
+                          "endIndex": 827,
+                          "text": ";",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "}",
+                  "typeId": 11,
+                  "startPosition": {
+                    "row": 29,
+                    "column": 4
+                  },
+                  "startIndex": 832,
+                  "endPosition": {
+                    "row": 29,
+                    "column": 5
+                  },
+                  "endIndex": 833,
+                  "text": "}",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "typeId": 55,
+      "startPosition": {
+        "row": 31,
+        "column": 0
+      },
+      "startIndex": 835,
+      "endPosition": {
+        "row": 31,
+        "column": 6
+      },
+      "endIndex": 841,
+      "text": "# blah",
+      "children": []
+    }
+  ]
+}
