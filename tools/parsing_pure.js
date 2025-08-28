@@ -27,12 +27,10 @@ export const treeToAstString = (tree) => {
 }
 
 /**
- * Description
- *
  * @example
  * ```js
  * console.log(findAndReplaceAll({
- *     nixCode: `{\n    permittedInsecurePackages = [\n    "linux-4.13.16"\n    "openssl-1.0.2u"\n];\n}`,
+ *     nixCode: `{\n    permittedInsecurePackages = [\n        "linux-4.13.16"\n        "openssl-1.0.2u"\n    ];\n}`,
  *     pattern: `(binding (attrpath) @key (list_expression ("]" @bracket)) @list)`,
  *     nameToReplace: "bracket",
  *     replacement: ({bracket, list})=>{
@@ -54,7 +52,7 @@ export const treeToAstString = (tree) => {
  *                     indent = eachNode.indent
  *                 }
  *             }
- *             return `${indent}${valueAsString}\n]`
+ *             return `${indent.slice(0,bracket.indent.length)}${valueAsString}\n${bracket.indent}]`
  *         }
  *     },
  * }))
@@ -107,7 +105,7 @@ export const appendToAttrListLiteral = ({nixCode, attrName, codeToAppend, })=>{
                         indent = eachNode.indent
                     }
                 }
-                return `${indent}${valueAsString}\n]`
+                return `${indent.slice(0,bracket.indent.length)}${valueAsString}\n${bracket.indent}]`
             }
         },
     })
